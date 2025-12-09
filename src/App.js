@@ -21,7 +21,7 @@ function App(){
 
      function check() 
      {
-        var logindetails = axios.get(`https://login-page-2-8hhc.onrender.com/login?username=${user}&password=${pass}`)
+        var logindetails = axios.get(`https://basheethloginclone-1.onrender.com/login?username=${user}&password=${pass}`)
         logindetails.then(function(data){
             if(data.data === true)
             {
