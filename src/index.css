@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.home-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Assets/Netflix.jpg');
+    background-size: cover;
+    /* cover the entire screen */
+    background-position: center;
+    /* center the image */
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home-container p {
+    color: #E50914;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 35%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.45);
+    /* translucent dark glass */
+    backdrop-filter: blur(1px);
+    max-width: 400px;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.btn {
+
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+}
+
+.input-box2 {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+.input-box1 {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+.input-box1:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.input-box2:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+
+.sucess-container {
+    background-image: url('./Assets/Netflix.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* cover the entire screen */
+    background-position: center;
+    /* center the image */
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.sucess-description h1 {
+    color: #E50914;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+
+
+.input-success {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 60%;
+    margin-left: 25%;
+
+}
+
+
+.input-success:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+.fail-container {
+     background: radial-gradient(circle at top left, #ff9999, #ff3333);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+.fail-description {
+    width: fit-content;
+    padding: 30px 50px;
+    padding-top: 25px;
+    min-height: 150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffcccc, #ff6666);
+    /* gradient background */
+    border: 2px solid #d60000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.fail-description p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    /* white text pops on red gradient */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
