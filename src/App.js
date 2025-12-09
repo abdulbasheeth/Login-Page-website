@@ -19,7 +19,7 @@ function App(){
         setpass(evt.target.value)
     }
 
-     function check()
+     function check() 
      {
         var logindetails = axios.get(`http://localhost:3001/login?username=${user}&password=${pass}`)
         logindetails.then(function(data){
